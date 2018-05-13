@@ -18,25 +18,13 @@ public class ListCommand implements Command {
 
     private static final Logger log = Logger.getLogger(ListCommand.class);
 
-
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         log.debug("Command starts");
 
-        String forward = Path.LIST_JSP;
-
-        List<Employee> employees = new MySQLEmployeeDAO().employeeList();
-        if (employees.size() > 0) {
-            log.trace("Employees size = " + employees.size());
-            request.getServletContext().setAttribute("employeeList", employees);
-        }
-
-        List<Department> departments = new MySQLDepartmentDAO().departmentsList();
-        if (departments.size() > 0) {
-            log.trace("Departments size = " + departments.size());
-            request.getServletContext().setAttribute("departmentList", departments);
-        }
-
+        String forward = request.getParameter("name").equals("departments") ?
+                Path.DEPARTMENTS_JSP :
+                Path.ALL_EMPLOYEES_JSP;
 
         log.trace("Forward address --> " + forward);
         log.debug("Controller finished, now go to forward address --> " + forward);

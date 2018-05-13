@@ -15,6 +15,8 @@ public class CommandContainer {
     static {
         // common commands
         commands.put("list", new ListCommand());
+        commands.put("filteredList", new FilteredListCommand());
+        commands.put("addEdit", new AddEditCommand());
         commands.put("addDepartment", new AddDepartmentCommand());
         commands.put("editDepartment", new EditDepartmentCommand());
         commands.put("removeDepartment", new RemoveDepartmentCommand());

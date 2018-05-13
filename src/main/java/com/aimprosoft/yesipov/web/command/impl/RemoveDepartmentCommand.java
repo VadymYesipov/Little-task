@@ -25,6 +25,8 @@ public class RemoveDepartmentCommand implements Command {
 
         Integer id = Integer.valueOf(request.getParameter("id"));
 
+        request.setAttribute("remove_ID", id);
+
         List<Department> departments = (List<Department>) request.getServletContext().getAttribute("departmentList");
 
         Department object = departments.stream()
@@ -51,7 +53,7 @@ public class RemoveDepartmentCommand implements Command {
             log.trace("Departments size = " + departments.size());
             request.getServletContext().setAttribute("departmentList", departments);
 
-            forward = "/index.jsp";
+            forward = Path.DEPARTMENTS_JSP;
         }
 
 

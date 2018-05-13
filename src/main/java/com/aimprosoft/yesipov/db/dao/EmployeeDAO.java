@@ -10,7 +10,9 @@ public interface EmployeeDAO {
 
     void editEmployee(Employee employee, String query);
 
-    void removeEmployee(Employee employee);
+    void removeEmployee(Employee employee, int size);
 
     List<Employee> employeeList();
+
+    List<Employee> filteredEmployeeList(Integer id);
 }

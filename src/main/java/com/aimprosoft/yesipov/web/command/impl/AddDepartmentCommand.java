@@ -47,7 +47,7 @@ public class AddDepartmentCommand implements Command {
             log.trace("Departments size = " + departments.size());
             request.getServletContext().setAttribute("departmentList", departments);
 
-            forward = "/index.jsp";
+            forward = Path.ADD_EDIT_DEPARTMENT;
         } else {
             errorMessage = "A department with such name already exists";
             request.setAttribute("errorMessage", errorMessage);
@@ -55,6 +55,7 @@ public class AddDepartmentCommand implements Command {
             return forward;
         }
 
+        request.setAttribute("add_name", name);
 
         log.trace("Forward address --> " + forward);
         log.debug("Controller finished, now go to forward address --> " + forward);

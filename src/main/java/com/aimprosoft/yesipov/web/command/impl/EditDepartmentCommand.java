@@ -26,6 +26,9 @@ public class EditDepartmentCommand implements Command {
         Integer id = Integer.valueOf(request.getParameter("id"));
         String name = request.getParameter("departmentName").trim();
 
+        request.setAttribute("edit_ID", id);
+        request.setAttribute("edit_name", name);
+
         List<Department> departments = (List<Department>) request.getServletContext().getAttribute("departmentList");
 
         Department object = departments.stream()
@@ -51,7 +54,7 @@ public class EditDepartmentCommand implements Command {
             log.trace("Departments size = " + departments.size());
             request.getServletContext().setAttribute("departmentList", departments);
 
-            forward = "/index.jsp";
+            forward = Path.ADD_EDIT_DEPARTMENT;
         }
 
 

@@ -69,7 +69,7 @@ public class DBManager {
      */
     public void commitAndClose(Connection con) {
         try {
-            //con.commit();
+            con.commit();
             con.close();
         } catch (SQLException ex) {
             ex.printStackTrace();

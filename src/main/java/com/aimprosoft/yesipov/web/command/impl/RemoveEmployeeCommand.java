@@ -23,34 +23,33 @@ public class RemoveEmployeeCommand implements Command {
         String errorMessage = null;
         String forward = Path.PAGE__ERROR_PAGE;
 
-        Integer id = Integer.valueOf(request.getParameter("id"));
+        String email = request.getParameter("email").trim();
 
         List<Employee> employees = (List<Employee>) request.getServletContext().getAttribute("employeeList");
 
-        Employee object = employees.stream()
-                .filter(x -> id.equals(x.getId()))
+        Employee employee = employees.stream()
+                .filter(x -> email.equals(x.getEmail()))
                 .findAny()
                 .orElse(null);
 
-        if (object == null) {
-            errorMessage = "An employee with such id doesn't exist";
+        if (employee == null) {
+            errorMessage = "An employee with such email doesn't exist";
             request.setAttribute("errorMessage", errorMessage);
             log.error("errorMessage --> " + errorMessage);
             return forward;
         } else {
             MySQLEmployeeDAO mySQLEmployeeDAO = new MySQLEmployeeDAO();
 
-            Employee employee = new Employee();
-            employee.setId(id);
+            mySQLEmployeeDAO.removeEmployee(employee, employees.size());
 
-            mySQLEmployeeDAO.removeEmployee(employee);
+            System.out.println(employee.getDepartment().getId());
 
-            employees = mySQLEmployeeDAO.employeeList();
+            employees = new MySQLEmployeeDAO().filteredEmployeeList(employee.getDepartment().getId());
 
             log.trace("Employee size = " + employees.size());
             request.getServletContext().setAttribute("employeeList", employees);
 
-            forward = "/WEB-INF/jsp/list.jsp";
+            forward = Path.EMPLOYEES_JSP;
         }
 
 

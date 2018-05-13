@@ -32,6 +32,9 @@ public class EditEmployeeCommand implements Command {
         Integer id = Integer.valueOf(request.getParameter("id"));
         String email = request.getParameter("email").trim();
 
+        request.setAttribute("ID", id);
+        request.setAttribute("mail", email);
+
         List<Employee> employees = (List<Employee>) request.getServletContext().getAttribute("employeeList");
 
         Employee object = employees.stream()
@@ -58,19 +61,17 @@ public class EditEmployeeCommand implements Command {
             log.trace("Employees size = " + employees.size());
             request.getServletContext().setAttribute("employeeList", employees);
 
-            forward = "/WEB-INF/jsp/list.jsp";
+            forward = Path.ADD_EDIT_EMPLOYEE;
         }
-
 
         log.trace("Forward address --> " + forward);
         log.debug("Controller finished, now go to forward address --> " + forward);
-
         log.debug("Command finished");
+
         return forward;
     }
 
     private String setUpQuery(HttpServletRequest request, String email) {
-        Employee employee = new Employee();
 
         Map<String, String> parameters = new LinkedHashMap<>();
 
@@ -81,6 +82,13 @@ public class EditEmployeeCommand implements Command {
         parameters.put(request.getParameter("position"), "job");
         parameters.put(request.getParameter("departmentId"), "department_id");
         parameters.put(request.getParameter("salary"), "salary");
+
+        request.setAttribute("edit_first_name", request.getParameter("firstName"));
+        request.setAttribute("edit_last_name", request.getParameter("lastName"));
+        request.setAttribute("edit_birth", request.getParameter("birthday"));
+        request.setAttribute("edit_job", request.getParameter("birthday"));
+        request.setAttribute("edit_department_id", request.getParameter("departmentId"));
+        request.setAttribute("edit_wage", request.getParameter("salary"));
 
         parameters.remove("");
 

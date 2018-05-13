@@ -79,7 +79,7 @@ public class MySQLEmployeeDAO implements EmployeeDAO {
     }
 
     @Override
-    public void removeEmployee(Employee employee) {
+    public void removeEmployee(Employee employee, int size) {
 
         PreparedStatement pstmt = null;
         Connection con = null;
@@ -92,6 +92,16 @@ public class MySQLEmployeeDAO implements EmployeeDAO {
             pstmt.setInt(1, employee.getId());
 
             pstmt.execute();
+
+            for (int i = 0; i < size - employee.getId(); ) {
+
+                pstmt = con.prepareStatement(Queries.SQL_SHIFT_EMPLOYEE);
+
+                pstmt.setInt(1, employee.getId() + i);
+                pstmt.setInt(2, employee.getId() + ++i);
+
+                pstmt.execute();
+            }
 
             pstmt.close();
 
@@ -130,6 +140,47 @@ public class MySQLEmployeeDAO implements EmployeeDAO {
         return employees;
     }
 
+    public List<Employee> filteredEmployeeList(Integer id) {
+
+        List<Employee> employees = new ArrayList<>();
+
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Connection con = null;
+
+        try {
+            con = DBManager.getInstance().getConnection();
+
+            EmployeeMapper mapper = new EmployeeMapper();
+
+            pstmt = con.prepareStatement(Queries.SQL_FIND_ALL_EMPLOYEES_FILTERED);
+            pstmt.setInt(1, id);
+
+            rs = pstmt.executeQuery();
+
+            int i = 1;
+            while (rs.next()) {
+
+                Employee employee = mapper.mapRow(rs);
+                employee.setId(i++);
+
+                employees.add(employee);
+            }
+
+            rs.close();
+            pstmt.close();
+
+        } catch (SQLException ex) {
+
+            DBManager.getInstance().rollbackAndClose(con);
+            ex.printStackTrace();
+        } finally {
+
+            DBManager.getInstance().commitAndClose(con);
+        }
+        return employees;
+    }
+
     /**
      * Extracts a user from the result set row.
      */
@@ -152,7 +203,7 @@ public class MySQLEmployeeDAO implements EmployeeDAO {
                 employee.setPosition(rs.getString(Fields.EMPLOYEE_POSITION));
 
                 Department department = new Department();
-                department.setId(rs.getInt(Fields.ENTITY__ID));
+                department.setId(rs.getInt(Fields.DEPARTMENT_ID));
                 department.setName(rs.getString(Fields.DEPARTMENT_NAME));
                 employee.setDepartment(department);
 

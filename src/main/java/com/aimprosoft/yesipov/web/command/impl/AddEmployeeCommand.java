@@ -28,6 +28,8 @@ public class AddEmployeeCommand implements Command {
 
         String email = request.getParameter("email").trim();
 
+        request.setAttribute("add_mail", email);
+
         List<Employee> employees = (List<Employee>) request.getServletContext().getAttribute("employeeList");
 
         Object object = employees.stream()
@@ -48,7 +50,7 @@ public class AddEmployeeCommand implements Command {
             log.trace("Employees size = " + employees.size());
             request.getServletContext().setAttribute("employeeList", employees);
 
-            forward = "/WEB-INF/jsp/list.jsp";
+            forward = Path.ADD_EDIT_EMPLOYEE;
         } else {
             errorMessage = "An employee with such email already exists";
             request.setAttribute("errorMessage", errorMessage);
@@ -80,6 +82,13 @@ public class AddEmployeeCommand implements Command {
         employee.setDepartment(department);
 
         employee.setSalary(Double.valueOf(request.getParameter("salary")));
+
+        request.setAttribute("add_first_name", request.getParameter("firstName"));
+        request.setAttribute("add_last_name", request.getParameter("lastName"));
+        request.setAttribute("add_birth", request.getParameter("birthday"));
+        request.setAttribute("add_job", request.getParameter("birthday"));
+        request.setAttribute("add_department_id", request.getParameter("departmentId"));
+        request.setAttribute("add_wage", request.getParameter("salary"));
 
         return employee;
     }

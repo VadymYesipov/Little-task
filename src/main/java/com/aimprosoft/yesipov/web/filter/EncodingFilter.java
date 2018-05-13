@@ -1,10 +1,15 @@
 package com.aimprosoft.yesipov.web.filter;
 
+import com.aimprosoft.yesipov.db.dao.impl.MySQLDepartmentDAO;
+import com.aimprosoft.yesipov.db.dao.impl.MySQLEmployeeDAO;
+import com.aimprosoft.yesipov.db.entity.Department;
+import com.aimprosoft.yesipov.db.entity.Employee;
 import org.apache.log4j.Logger;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.util.List;
 
 public class EncodingFilter implements Filter {
 
@@ -30,6 +35,18 @@ public class EncodingFilter implements Filter {
         if (requestEncoding == null) {
             log.trace("Request encoding = null, set encoding --> " + encoding);
             request.setCharacterEncoding(encoding);
+        }
+
+        List<Department> departments = new MySQLDepartmentDAO().departmentsList();
+        if (departments.size() > 0) {
+            log.trace("Departments size = " + departments.size());
+            request.getServletContext().setAttribute("departmentList", departments);
+        }
+
+        List<Employee> employees = new MySQLEmployeeDAO().employeeList();
+        if (employees.size() > 0) {
+            log.trace("Employee size = " + employees.size());
+            request.getServletContext().setAttribute("employeeList", employees);
         }
 
         log.debug("Filter finished");
