@@ -29,7 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddDepartmentCommandTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddDepartmentCommandTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
@@ -37,6 +37,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.git/config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,6 +149,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommand.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.java" />
+        <option value="$PROJECT_DIR$/.git/config" />
       </list>
     </option>
   </component>
@@ -561,7 +572,7 @@
       <workItem from="1526158341657" duration="5816000" />
       <workItem from="1526219217765" duration="6555000" />
       <workItem from="1526230727267" duration="16591000" />
-      <workItem from="1526395609774" duration="3248000" />
+      <workItem from="1526395609774" duration="3357000" />
     </task>
     <task id="LOCAL-00001" summary="hue moe">
       <created>1526397037013</created>
@@ -591,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526398815302</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hue moe">
+      <created>1526398878991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526398878991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -618,7 +636,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32210000" />
+    <option name="totallyTimeSpent" value="32319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -700,14 +718,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employees.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="76" lean-forward="true" selection-start-line="67" selection-start-column="76" selection-end-line="67" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
@@ -1103,6 +1113,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.git/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
