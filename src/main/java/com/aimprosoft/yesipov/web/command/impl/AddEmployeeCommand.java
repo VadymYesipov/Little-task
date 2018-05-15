@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.*;
+
 import java.io.IOException;
 import java.sql.Date;
 import java.util.List;
@@ -24,7 +24,7 @@ public class AddEmployeeCommand implements Command {
         log.debug("Command starts");
 
         String errorMessage = null;
-        String forward = Path.PAGE__ERROR_PAGE;
+        String forward = Path.PAGE_ERROR_PAGE;
 
         String email = request.getParameter("email").trim();
 

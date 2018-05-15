@@ -21,7 +21,7 @@ public class RemoveEmployeeCommand implements Command {
         log.debug("Command starts");
 
         String errorMessage = null;
-        String forward = Path.PAGE__ERROR_PAGE;
+        String forward = Path.PAGE_ERROR_PAGE;
 
         String email = request.getParameter("email").trim();
 
