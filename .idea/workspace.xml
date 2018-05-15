@@ -6,29 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0fa202-b606-4f64-8d70-c115174f03d7" name="Default" comment="Second commit">
+    <list default="true" id="1a0fa202-b606-4f64-8d70-c115174f03d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/Path.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/Path.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/db/DBManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/db/DBManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/AddEmployeeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/AddEmployeeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/EditDepartmentCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/EditDepartmentCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/EditEmployeeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/EditEmployeeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/NoCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/NoCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/RemoveDepartmentCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/RemoveDepartmentCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/RemoveEmployeeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/command/impl/RemoveEmployeeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/filter/CommandAccessFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/aimprosoft/yesipov/web/filter/CommandAccessFilter.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLEmployeeDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLEmployeeDAO.class" />
-      <change beforePath="$PROJECT_DIR$/target/little-task/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/little-task/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/db/DBManager.class" afterPath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/db/DBManager.class" />
-      <change beforePath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO.class" afterPath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO.class" />
-      <change beforePath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLEmployeeDAO.class" afterPath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLEmployeeDAO.class" />
-      <change beforePath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/web/command/impl/RemoveEmployeeCommand.class" afterPath="$PROJECT_DIR$/target/little-task/WEB-INF/classes/com/aimprosoft/yesipov/web/command/impl/RemoveEmployeeCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/little-task/WEB-INF/jsp/add_edit_department.jsp" afterPath="$PROJECT_DIR$/target/little-task/WEB-INF/jsp/add_edit_department.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/little-task/WEB-INF/lib/log4j-1.2.17.jar" afterPath="$PROJECT_DIR$/target/little-task/WEB-INF/lib/log4j-1.2.17.jar" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/Path.class" afterPath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/Path.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/DBManager.class" afterPath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/DBManager.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO$DepartmentMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/db/dao/impl/MySQLDepartmentDAO$DepartmentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/web/command/impl/EditEmployeeCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/aimprosoft/yesipov/web/command/impl/EditEmployeeCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -330,6 +315,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -581,8 +567,16 @@
       <workItem from="1526158341657" duration="5816000" />
       <workItem from="1526219217765" duration="6555000" />
       <workItem from="1526230727267" duration="16591000" />
-      <workItem from="1526395609774" duration="1397000" />
+      <workItem from="1526395609774" duration="2912000" />
     </task>
+    <task id="LOCAL-00001" summary="hue moe">
+      <created>1526397037013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526397037013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -609,7 +603,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30359000" />
+    <option name="totallyTimeSpent" value="31874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -656,7 +650,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="hue moe" />
+    <option name="LAST_COMMIT_MESSAGE" value="hue moe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -690,14 +685,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departments.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employees.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -1086,10 +1073,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/RequestDispatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/aimprosoft/yesipov/web/command/impl/AddDepartmentCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1155,7 +1150,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
