@@ -21,7 +21,7 @@ public class EditDepartmentCommand implements Command {
         log.debug("Command starts");
 
         String errorMessage = null;
-        String forward = Path.PAGE__ERROR_PAGE;
+        String forward = Path.PAGE_ERROR_PAGE;
 
         Integer id = Integer.valueOf(request.getParameter("id"));
         String name = request.getParameter("departmentName").trim();

@@ -23,6 +23,6 @@ public class NoCommand implements Command {
         log.error("Set the request attribute: errorMessage --> " + errorMessage);
 
         log.debug("Command finished");
-        return Path.PAGE__ERROR_PAGE;
+        return Path.PAGE_ERROR_PAGE;
     }
 }

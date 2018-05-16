@@ -18,35 +18,28 @@ public class MySQLDepartmentDAO implements DepartmentDAO {
 
     @Override
     public void addDepartment(Department department) {
-
         PreparedStatement pstmt = null;
         Connection con = null;
 
         try {
             con = DBManager.getInstance().getConnection();
-
             pstmt = con.prepareStatement(Queries.SQL_INSERT_NEW_DEPARTMENT);
 
             pstmt.setInt(1, department.getId());
             pstmt.setString(2, department.getName());
 
             pstmt.execute();
-
             pstmt.close();
-
         } catch (SQLException ex) {
-
             DBManager.getInstance().rollbackAndClose(con);
             ex.printStackTrace();
         } finally {
-
             DBManager.getInstance().commitAndClose(con);
         }
     }
 
     @Override
     public void editDepartment(Department department) {
-
         PreparedStatement pstmt = null;
         Connection con = null;
 
@@ -59,15 +52,11 @@ public class MySQLDepartmentDAO implements DepartmentDAO {
             pstmt.setInt(2, department.getId());
 
             pstmt.execute();
-
             pstmt.close();
-
         } catch (SQLException ex) {
-
             DBManager.getInstance().rollbackAndClose(con);
             ex.printStackTrace();
         } finally {
-
             DBManager.getInstance().commitAndClose(con);
         }
     }

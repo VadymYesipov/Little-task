@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class AddDepartmentCommand implements Command {
 
@@ -22,7 +21,7 @@ public class AddDepartmentCommand implements Command {
         log.debug("Command starts");
 
         String errorMessage = null;
-        String forward = Path.PAGE__ERROR_PAGE;
+        String forward = Path.PAGE_ERROR_PAGE;
 
         String name = request.getParameter("departmentName").trim();
 

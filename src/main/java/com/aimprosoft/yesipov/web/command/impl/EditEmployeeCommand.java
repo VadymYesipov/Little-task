@@ -13,9 +13,6 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class EditEmployeeCommand implements Command {
@@ -27,7 +24,7 @@ public class EditEmployeeCommand implements Command {
         log.debug("Command starts");
 
         String errorMessage = null;
-        String forward = Path.PAGE__ERROR_PAGE;
+        String forward = Path.PAGE_ERROR_PAGE;
 
         Integer id = Integer.valueOf(request.getParameter("id"));
         String email = request.getParameter("email").trim();
