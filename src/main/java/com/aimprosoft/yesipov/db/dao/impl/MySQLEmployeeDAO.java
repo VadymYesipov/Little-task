@@ -191,7 +191,7 @@ public class MySQLEmployeeDAO implements EmployeeDAO {
             try {
                 Employee employee = new Employee();
 
-                employee.setId(rs.getInt(Fields.ENTITY__ID));
+                employee.setId(rs.getInt(Fields.ENTITY_ID));
 
                 employee.setFirstName(rs.getString(Fields.EMPLOYEE_FIRST_NAME));
                 employee.setLastName(rs.getString(Fields.EMPLOYEE_LAST_NAME));
