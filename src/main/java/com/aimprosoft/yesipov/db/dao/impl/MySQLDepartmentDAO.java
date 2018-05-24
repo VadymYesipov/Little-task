@@ -134,7 +134,7 @@ public class MySQLDepartmentDAO implements DepartmentDAO {
             try {
                 Department department = new Department();
 
-                department.setId(rs.getInt(Fields.ENTITY__ID));
+                department.setId(rs.getInt(Fields.ENTITY_ID));
                 department.setName(rs.getString(Fields.DEPARTMENT_NAME));
 
                 return department;
